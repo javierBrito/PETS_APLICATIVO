@@ -1,0 +1,24 @@
+### Rewrite Rules Added by CyberPanel Rewrite Rule Generator
+
+RewriteEngine On
+RewriteCond %{HTTPS}  !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+### End CyberPanel Generated Rules.
+
+AddHandler application/x-httpd-php80 .php
+Options +FollowSymlinks
+RewriteEngine On
+
+# Evitar la reescritura para archivos y directorios existentes
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirigir cualquier otra solicitud a index.html
+RewriteRule ^ /index.html [L]
+
+# Configurar página de inicio de sesión para error 401 (No autorizado)
+ErrorDocument 401 /loginv2
+
+cat: /home/sistema.asedinfo.com/public_html/.htaccess: No such file or directory

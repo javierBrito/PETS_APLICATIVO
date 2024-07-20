@@ -10419,7 +10419,7 @@ var environment = {
   production: false,
   hmr: false,
   prefijoApp: "SEG",
-  //url_seguridad: 'http://localhost:8080/pets-servicios',
+  //url_seguridad: 'http://localhost:8082/pets-servicios',
   url_seguridad: 'https://springpets.asedinfo.com/pets-servicios',
   url_wspAI: 'http://localhost:5000',
   //url_wspAI: 'https://whapp.asedinfo.com',

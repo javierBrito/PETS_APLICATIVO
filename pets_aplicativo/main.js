@@ -10421,10 +10421,10 @@ var environment = {
   prefijoApp: "SEG",
   //url_seguridad: 'http://localhost:8082/pets-servicios',
   url_seguridad: 'https://springpets.asedinfo.com/pets-servicios',
-  url_wspAI: 'http://localhost:5000',
-  //url_wspAI: 'https://whapp.asedinfo.com',
-  url_wspND: 'http://localhost:5001' //url_wspND: 'https://whapp.newdanceec.com',
-
+  //url_wspAI: 'http://localhost:5000',
+  url_wspAI: 'https://whapp.asedinfo.com',
+  //url_wspND: 'http://localhost:5001',
+  url_wspND: 'https://whapp.newdanceec.com'
 };
 /*
  * For easier debugging in development mode, you can import the following file
